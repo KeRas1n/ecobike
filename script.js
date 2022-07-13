@@ -2,9 +2,21 @@ $(document).ready(function(){
     $(this).scrollTop(0);
 });
 
+var width = document.documentElement.clientWidth;
+console.log(width);
+if(width <= 768){
+  $('.header').css('background','#0000009b');
+  $('.title').css('margin-top','4px');
+  $('.title').css('font-size','35px');
+  $('.black').css('color','white');
+  $('.menu-link').css('color','white');
+}
+else{
+
+
 //OnScroll Events
   $(window).scroll(function () {
-if ($(window).scrollTop() >= 5) {
+if ($(window).scrollTop() >= 1) {
 $('.header').css('background','#0000009b');
 $('.title').css('margin-top','4px');
 $('.title').css('font-size','35px');
@@ -18,7 +30,7 @@ $('.black').css('color','black');
 $('.menu-link').css('color','black');
 }
 });
-
+}
 
 //infoboxes
 var first_realblock = document.querySelector('.first');
