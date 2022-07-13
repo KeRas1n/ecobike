@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 //OnScroll Events
   $(window).scroll(function () {
-if ($(window).scrollTop() >= 20) {
+if ($(window).scrollTop() >= 30) {
 $('.header').css('background','#0000009b');
 $('.title').css('margin-top','4px');
 $('.title').css('font-size','35px');
